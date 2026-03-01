@@ -24,8 +24,8 @@ zinit ice as"program" pick"bin/git-fuzzy"
 zinit light bigH/git-fuzzy
 # zinit snippet OMZP::command-not-found
 # command-not-found plugin
-source /etc/zsh_command_not_found
-
+#source /etc/zsh_command_not_found
+[[ -f /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
 source ~/.config/zsh/tools/aliases
 source ~/.config/zsh/tools/exports
 source ~/.config/zsh/tools/functions

@@ -168,3 +168,4 @@ eval "$(zoxide init --cmd cd bash)"
 #  
 #         # echo "Fallback 'set color_prompt force_color_prompt' executed." >&2
 #       }
+. "$HOME/.cargo/env"

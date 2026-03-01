@@ -1,11 +1,13 @@
 [user]
 	email = mstkhdmjwjl17@gmail.com
-	name = IslamMohamedSalama
+	name = Islam Mohamed
 
 [safe]
   # directory = /home/shared/Islam-Projects/Python
   directory = /home/shared/Islam-Projects
   directory = /home/islam/.config/zsh
+	directory = /mnt/my-data/web-projects/VH-WEBSITE-BOMSQUAD-WEB
+	directory = /mnt/my-data/web-projects/ascendinf-test-web
 
 [color "status"]
 	added = blue bold
@@ -19,10 +21,18 @@
 	
 [pull]
 	ff = only
-	rebase = false
+	rebase = true
 [init]
 	defaultBranch = main
 [http]
 	postBuffer = 524288000
 [core]
-	editor = nvim
+	editor = codium --wait
+	autocrlf = input
+[color]
+	ui = auto
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit

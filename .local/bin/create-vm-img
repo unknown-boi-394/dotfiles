@@ -1,0 +1,8 @@
+#!/bin/sh
+
+read -p "Enter the disk size in GBs like "80G": " a
+while [[ -z "$a" ]]; do
+    read -p "Enter the disk size, please! " a
+done
+
+qemu-img create -f qcow2 -o preallocation=off $a-disk.qcow2 $a

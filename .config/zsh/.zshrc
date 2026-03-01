@@ -44,3 +44,10 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd -1 -A --color=always $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'lsd -1 -A --color=always $realpath'
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+
+# fnm
+FNM_PATH="/home/islam/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi

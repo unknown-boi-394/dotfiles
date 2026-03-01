@@ -27,11 +27,9 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 
-export XCURSOR_THEME="Apple-cursors"
-export XCURSOR_SIZE=30
-
 # zsh
 export ZDOTDIR="$HOME/.config/zsh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+. "$HOME/.cargo/env"

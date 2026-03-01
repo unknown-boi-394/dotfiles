@@ -4,3 +4,4 @@ export ZDOTDIR="$HOME/.config/zsh"
 #export LESSHISTFILE=-
 #skip_global_compinit=1
 
+. "$HOME/.cargo/env"

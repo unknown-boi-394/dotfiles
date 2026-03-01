@@ -1,14 +1,20 @@
 #!/bin/zsh
 
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/Devlopment/Python/bin:$PATH
+export PATH=$HOME/Development/Python/bin/:$PATH
 export PATH=$HOME/node_modules/.bin:$PATH
 export PATH=$HOME/Devlopment/nodejs/bin:$PATH
 export PATH=$HOME/Devlopment/lua/bin:$PATH
+export PATH=$HOME/.cargo/bin/:$PATH
 export C_INCLUDE_PATH="$HOME/.local/include:$C_INCLUDE_PATH"
 export LIBRARY_PATH="$HOME/.local/lib:$LIBRARY_PATH"
-export LD_LIBRARY_PATH="$HOME/.local/lib:$HOME/Devlopment/Python/lib:$LD_LIBRARY_PATH"
-
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/home/islam/Development/Python/lib:$LD_LIBRARY_PATH
+# fnm
+FNM_PATH="/home/islam/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
 # export NVM_DIR="$HOME/.nvm"
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
